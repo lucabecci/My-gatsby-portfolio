@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components'
 
 
-const Navbar = ({firstNavigation, secondNavigation, firstLink, secondLink}) => {
+function Navbar ({firstNavigation, secondNavigation, firstLink, secondLink}) {
     //estilo del componente de navigacion
     const Navigation = styled.nav`
         display: flex;
@@ -19,7 +19,7 @@ const Navbar = ({firstNavigation, secondNavigation, firstLink, secondLink}) => {
         font-size: 30px;
         padding: 2px 5px 0 0 ;
         margin: 5px 0px 0 10px;
-        letter-spacing: 3.5px;
+        letter-spacing: 2.5px;
         @media (max-width: 768px) {
             font-size: 25px;
             letter-spacing: 0px;
@@ -45,7 +45,6 @@ const Navbar = ({firstNavigation, secondNavigation, firstLink, secondLink}) => {
             }
         }
     `;
-    //configuracion de rutas
 
     
     return (
